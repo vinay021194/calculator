@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="script.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator</title>
+  </head>
+  <body>
+    <div class="header">Calculator</div>
+    <div class="calculator">
+      <input type="text" id="display" disabled />
+      <button onclick="appendToDisplay('1')" id="oneButton" disabled>1</button>
+      <button onclick="appendToDisplay('2')" id="twoButton" disabled>2</button>
+      <button onclick="appendToDisplay('3')" id="threeButton" disabled>
+        3
+      </button>
+      <button onclick="appendToDisplay('4')" id="fourButton" disabled>4</button>
+      <button onclick="appendToDisplay('5')" id="fiveButton" disabled>5</button>
+      <button onclick="appendToDisplay('6')" id="sixButton" disabled>6</button>
+      <button onclick="appendToDisplay('7')" id="sevenButton" disabled>
+        7
+      </button>
+      <button onclick="appendToDisplay('8')" id="eightButton" disabled>
+        8
+      </button>
+      <button onclick="appendToDisplay('9')" id="nineButton" disabled>9</button>
+      <button onclick="appendToDisplay('0')" id="zeroButton" disabled>0</button>
+      <button onclick="appendToDisplay('.')" id="decimalButton" disabled>
+        .
+      </button>
+
+      <button onclick="clearDisplay()" id="clearButton" disabled>C</button>
+      <button onclick="appendToDisplay('/')" id="divideButton" disabled>
+        /
+      </button>
+
+      <button onclick="appendToDisplay('*')" id="multiplyButton" disabled>
+        *
+      </button>
+      <button onclick="appendToDisplay('-')" id="subtractButton" disabled>
+        -
+      </button>
+      <button onclick="appendToDisplay('+')" id="addButton" disabled>+</button>
+
+      <button onclick="calculate()" class="operator" id="equalsButton" disabled>
+        =
+      </button>
+      <button onclick="toggleColor()" id="toggleButton">ON</button>
+    </div>
+  </body>
+</html>
